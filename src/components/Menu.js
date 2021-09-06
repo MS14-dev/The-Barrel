@@ -7,7 +7,7 @@ import logo from '../images/logo.png'
 export default function Menu() {
     return (
         <div id="menu-outer" className="col-md-12">
-            <Link to="/">
+            <Link to="/The-Barrel">
                 <img id="menu-logo" src={logo} />
             </Link>
         </div>

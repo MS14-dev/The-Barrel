@@ -12,10 +12,11 @@ class App extends Component {
   render(){
     return (
       <BrowserRouter>
-       <Menu/>
-       <br/>
-       <br/>
-       <Switch>
+         <Menu/>
+         <br/>
+         <br/>
+        <Switch>
+         <Route component={Home}  path="/The-Barrel" />
          <Route component={Home} exact={true} path="/" />
        </Switch>
       </BrowserRouter>
