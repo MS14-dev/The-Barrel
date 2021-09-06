@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/The-Barrel/static/css/main.6cf48b51.chunk.css",
-    "main.js": "/The-Barrel/static/js/main.8e478d36.chunk.js",
-    "main.js.map": "/The-Barrel/static/js/main.8e478d36.chunk.js.map",
+    "main.js": "/The-Barrel/static/js/main.e7c5ef20.chunk.js",
+    "main.js.map": "/The-Barrel/static/js/main.e7c5ef20.chunk.js.map",
     "runtime-main.js": "/The-Barrel/static/js/runtime-main.a2c045b4.js",
     "runtime-main.js.map": "/The-Barrel/static/js/runtime-main.a2c045b4.js.map",
     "static/js/2.f0bdaf99.chunk.js": "/The-Barrel/static/js/2.f0bdaf99.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.a2c045b4.js",
     "static/js/2.f0bdaf99.chunk.js",
     "static/css/main.6cf48b51.chunk.css",
-    "static/js/main.8e478d36.chunk.js"
+    "static/js/main.e7c5ef20.chunk.js"
   ]
 }
