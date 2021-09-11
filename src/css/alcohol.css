@@ -1,0 +1,34 @@
+#carousel-outer{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.904),rgba(0, 0, 0, 0.432)), url('../images//alcohols/alcohol_3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+}
+#carousel-inner-1 h1{
+   color: white;
+   font-size: 500%;
+   font-family: fantasy;
+   text-align: center;
+   margin-top: 20%;
+}
+.item-div{
+    background: rgb(214, 210, 210);
+    border:5px solid white;
+    padding: 5%;
+   
+}
+.item-div:hover{
+   border: 5px solid rgba(0, 0, 0, 0.397);
+}
+.title{
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+    text-align: center;
+}
+.try_btn{
+    border:0;
+    background: rgba(0, 0, 0, 0.397);
+    border-radius: 10%;
+    color: white;
+}

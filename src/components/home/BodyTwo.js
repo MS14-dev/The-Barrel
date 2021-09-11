@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 
 import '../../css/index.css';
 
@@ -43,7 +44,22 @@ export default class BodyTwo extends Component {
                                 alcoholics.slice(6, 8).map((al)=>{
                                     return (
                                         <div id={al.idDrink} style={{display:'inline-block',margin:50}}>
-                                            <img width="200" height="200" src={al.strDrinkThumb} />
+                                            <img className="home-drink-img" width="200" height="200" src={al.strDrinkThumb} />
+                                            <h6 style={{color:'white'}} >{al.strDrink}</h6>
+                                        </div>
+                                    )
+                                })
+                            }
+                            <div style={{display:'inline-block'}}>
+                                <Link to="/alcohols"><button className="btn btn-warning btn-md" >more+</button></Link>
+                            </div>
+                        </div>
+                        <div style={{display:!isView?'unset':'none'}} className="col-md-12" id="nonAlcoholoc-div">
+                            {
+                                nonAlcoholics.slice(0, 2).map((al)=>{
+                                    return (
+                                        <div id={al.idDrink} style={{display:'inline-block',margin:50}}>
+                                            <img className="home-drink-img" width="200" height="200" src={al.strDrinkThumb} />
                                             <h6 style={{color:'white'}} >{al.strDrink}</h6>
                                         </div>
                                     )
@@ -52,18 +68,6 @@ export default class BodyTwo extends Component {
                             <div style={{display:'inline-block'}}>
                                 <button className="btn btn-warning btn-md" >more+</button>
                             </div>
-                        </div>
-                        <div style={{display:!isView?'unset':'none'}} className="col-md-12" id="nonAlcoholoc-div">
-                            {
-                                nonAlcoholics.slice(0, 2).map((al)=>{
-                                    return (
-                                        <div id={al.idDrink} style={{display:'inline-block',margin:50}}>
-                                            <img width="200" height="200" src={al.strDrinkThumb} />
-                                            <h6 style={{color:'white'}} >{al.strDrink}</h6>
-                                        </div>
-                                    )
-                                })
-                            }
                         </div>
                         </div>
                     </div>

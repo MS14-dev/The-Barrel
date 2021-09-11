@@ -77,3 +77,6 @@ padding: 10px;
     height: 100%;
     padding: 10px;
 }
+.home-drink-img :hover{
+    border-radius: 50%;
+}
