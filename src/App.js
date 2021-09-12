@@ -7,6 +7,7 @@ import './css/bootstrap.min.css'
 import Menu from './components/Menu';
 import Home from './pages/HomePage';
 import Alcohol from './pages/AlcoholPage'
+import About from './pages/AboutPage';
 
 class App extends Component {
   
@@ -18,6 +19,7 @@ class App extends Component {
          <br/>
         <Switch>
          <Route component={Home}  path="/The-Barrel" />
+         <Route component={About}  path="/about" />
          <Route component={Home} exact={true} path="/" />
          <Route component={Alcohol} exact={true} path="/alcohols" />
        </Switch>

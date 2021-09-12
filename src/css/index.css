@@ -3,6 +3,9 @@
     height: 10vh;
     position:fixed;
     z-index: 5;
+    /* newly added */
+    /* padding: 5px; */
+    /* box-sizing: border-box; */
 }
 #menu-logo{
     width: 10%;
