@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/The-Barrel/static/css/main.88dbe3da.chunk.css",
-    "main.js": "/The-Barrel/static/js/main.57092b60.chunk.js",
-    "main.js.map": "/The-Barrel/static/js/main.57092b60.chunk.js.map",
-    "runtime-main.js": "/The-Barrel/static/js/runtime-main.a0ff65f8.js",
-    "runtime-main.js.map": "/The-Barrel/static/js/runtime-main.a0ff65f8.js.map",
-    "static/js/2.0c27b4e3.chunk.js": "/The-Barrel/static/js/2.0c27b4e3.chunk.js",
-    "static/js/2.0c27b4e3.chunk.js.map": "/The-Barrel/static/js/2.0c27b4e3.chunk.js.map",
-    "static/js/3.09aa5c6b.chunk.js": "/The-Barrel/static/js/3.09aa5c6b.chunk.js",
-    "static/js/3.09aa5c6b.chunk.js.map": "/The-Barrel/static/js/3.09aa5c6b.chunk.js.map",
+    "main.css": "/The-Barrel/static/css/main.ef057e98.chunk.css",
+    "main.js": "/The-Barrel/static/js/main.0adcc285.chunk.js",
+    "main.js.map": "/The-Barrel/static/js/main.0adcc285.chunk.js.map",
+    "runtime-main.js": "/The-Barrel/static/js/runtime-main.e94980de.js",
+    "runtime-main.js.map": "/The-Barrel/static/js/runtime-main.e94980de.js.map",
+    "static/js/2.8da51137.chunk.js": "/The-Barrel/static/js/2.8da51137.chunk.js",
+    "static/js/2.8da51137.chunk.js.map": "/The-Barrel/static/js/2.8da51137.chunk.js.map",
+    "static/js/3.a2dc6c2e.chunk.js": "/The-Barrel/static/js/3.a2dc6c2e.chunk.js",
+    "static/js/3.a2dc6c2e.chunk.js.map": "/The-Barrel/static/js/3.a2dc6c2e.chunk.js.map",
     "index.html": "/The-Barrel/index.html",
-    "static/css/main.88dbe3da.chunk.css.map": "/The-Barrel/static/css/main.88dbe3da.chunk.css.map",
-    "static/js/2.0c27b4e3.chunk.js.LICENSE.txt": "/The-Barrel/static/js/2.0c27b4e3.chunk.js.LICENSE.txt",
+    "static/css/main.ef057e98.chunk.css.map": "/The-Barrel/static/css/main.ef057e98.chunk.css.map",
+    "static/js/2.8da51137.chunk.js.LICENSE.txt": "/The-Barrel/static/js/2.8da51137.chunk.js.LICENSE.txt",
     "static/media/alcohol.css": "/The-Barrel/static/media/alcohol_3.debf154d.jpg",
     "static/media/index.css": "/The-Barrel/static/media/nonalcoholic.f39ea5b0.jpg",
-    "static/media/logo.f18c1ad4.png": "/The-Barrel/static/media/logo.f18c1ad4.png"
+    "static/media/logo.f18c1ad4.png": "/The-Barrel/static/media/logo.f18c1ad4.png",
+    "static/media/nonalcohol.css": "/The-Barrel/static/media/nonal_1.ac77e4fb.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a0ff65f8.js",
-    "static/js/2.0c27b4e3.chunk.js",
-    "static/css/main.88dbe3da.chunk.css",
-    "static/js/main.57092b60.chunk.js"
+    "static/js/runtime-main.e94980de.js",
+    "static/js/2.8da51137.chunk.js",
+    "static/css/main.ef057e98.chunk.css",
+    "static/js/main.0adcc285.chunk.js"
   ]
 }
