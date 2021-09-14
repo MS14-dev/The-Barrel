@@ -7,6 +7,18 @@
     /* padding: 5px; */
     /* box-sizing: border-box; */
 }
+#menu-input{
+    width: 50%;
+    margin: 0;
+}
+@media only screen and (max-width: 600px) {
+   #menu-outer{
+      height: 20vh;
+   }
+   #menu-input{
+       width: 100%;
+   }
+}
 #menu-logo{
     width: 10%;
     height: 100%;

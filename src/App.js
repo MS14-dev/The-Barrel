@@ -8,6 +8,9 @@ import Menu from './components/Menu';
 import Home from './pages/HomePage';
 import Alcohol from './pages/AlcoholPage'
 import About from './pages/AboutPage';
+import Dynamic from './pages/DynamicPage'
+import NonAlcohol from './pages/NonAlcoholPage'
+
 
 class App extends Component {
   
@@ -22,6 +25,8 @@ class App extends Component {
          <Route component={About}  path="/about" />
          <Route component={Home} exact={true} path="/" />
          <Route component={Alcohol} exact={true} path="/alcohols" />
+         <Route component={NonAlcohol} exact={true} path="/non-alcohols" />
+         <Route render={(props) => { return ( <Dynamic {...props } /> )}}  path="/:dynamic" />
        </Switch>
       </BrowserRouter>
     );

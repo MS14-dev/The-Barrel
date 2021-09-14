@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
 
+import {routeHistory} from '../../hooks/routeHistory'
+
 import '../../css/index.css';
 
 export default class BodyTwo extends Component {
@@ -11,6 +13,12 @@ export default class BodyTwo extends Component {
         nonAlcoholics:[],
         swichClass: 'home-body-switch',
         isView:true
+    }
+
+    buttonStyle = {
+        background:'none',
+        border:0,
+        color:'white'
     }
 
     componentDidMount=async()=>{
@@ -32,6 +40,10 @@ export default class BodyTwo extends Component {
         }
     }
 
+     onClick=(id)=>{
+        this.props.switch(`${id}`)
+    }
+
     render() {
         let {alcoholics,nonAlcoholics,isView} = this.state
         return (
@@ -45,7 +57,7 @@ export default class BodyTwo extends Component {
                                     return (
                                         <div id={al.idDrink} style={{display:'inline-block',margin:50}}>
                                             <img className="home-drink-img" width="200" height="200" src={al.strDrinkThumb} />
-                                            <h6 style={{color:'white'}} >{al.strDrink}</h6>
+                                            <button style={this.buttonStyle} onClick={()=>{this.onClick(al.idDrink)}} >{al.strDrink}</button>
                                         </div>
                                     )
                                 })
@@ -60,13 +72,13 @@ export default class BodyTwo extends Component {
                                     return (
                                         <div id={al.idDrink} style={{display:'inline-block',margin:50}}>
                                             <img className="home-drink-img" width="200" height="200" src={al.strDrinkThumb} />
-                                            <h6 style={{color:'white'}} >{al.strDrink}</h6>
+                                            <button style={this.buttonStyle} onClick={()=>{this.onClick(al.idDrink)}} >{al.strDrink}</button>
                                         </div>
                                     )
                                 })
                             }
                             <div style={{display:'inline-block'}}>
-                                <button className="btn btn-warning btn-md" >more+</button>
+                                <Link to="/non-alcohols"><button className="btn btn-warning btn-md" >more+</button></Link>
                             </div>
                         </div>
                         </div>

@@ -16,7 +16,7 @@ export default function Body() {
     }
 
     useEffect(async()=>{
-        let dataAl = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic');
+        let dataAl = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic');
         setAlcohols(dataAl.data.drinks)
     },[])
 

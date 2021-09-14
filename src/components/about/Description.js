@@ -1,11 +1,16 @@
 import React from 'react'
-import {Redirect} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import logo from '../../images/logo.png'
 import email from '../../images/about/email.png'
 import phone from '../../images/about/phone.png'
 
 export default function Description() {
-    
+    var history  = useHistory()
+    const onClick=(e)=>{
+        let path = "11011"
+        history.push(path);
+    }
+
     return (
         <div className="container-fluid">
             <div className="row">
