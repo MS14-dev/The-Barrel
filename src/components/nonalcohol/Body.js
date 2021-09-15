@@ -2,7 +2,7 @@ import React,{useEffect,useState,useRef} from 'react'
 import axios from 'axios'
 import {Link,useHistory} from 'react-router-dom'
 
-import '../../css/alcohol.css'
+import '../../css/nonalcohol.css'
 
 export default function Body() {
 

@@ -1,11 +1,15 @@
 import React,{useEffect,useState} from 'react'
+import {useHistory} from 'react-router-dom'
 import axios from 'axios'
 import '../../css/dynamic.css'
 
 export default function Body({path}) {
+    
     var {params} = path;
     var [drink,setDrink] = useState({})
     var [ingrediants,setIngrediants] = useState([])
+    var history = useHistory();
+    
     useEffect(async()=>{
         if(parseInt(params.dynamic)){
         var {data} = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${params.dynamic}`)
@@ -13,14 +17,30 @@ export default function Body({path}) {
         
         var {strIngredient1,strIngredient2,strIngredient3,strIngredient4,strIngredient5,strIngredient6} = data.drinks[0];
         setIngrediants([strIngredient1,strIngredient2,strIngredient3,strIngredient4,strIngredient5,strIngredient6])
-        }else{
-        var {data} = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${params.dynamic}`)
-        setDrink(data.drinks[0])
+        }else if(params.dynamic.length == 1){
+            alert('Invalid entry :(')
+            history.push('The-Barrel')
+        }
+        else if(!params.dynamic.includes(' ')){
         
-        var {strIngredient1,strIngredient2,strIngredient3,strIngredient4,strIngredient5,strIngredient6} = data.drinks[0];
-        setIngrediants([strIngredient1,strIngredient2,strIngredient3,strIngredient4,strIngredient5,strIngredient6])
+        //response for correct input / functionality here
+           var {data} = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${params.dynamic}`)
+
+           if(data.drinks.length > 0 && data){
+             setDrink(data.drinks[0])
+        
+             var {strIngredient1,strIngredient2,strIngredient3,strIngredient4,strIngredient5,strIngredient6} = data.drinks[0];
+             setIngrediants([strIngredient1,strIngredient2,strIngredient3,strIngredient4,strIngredient5,strIngredient6])
+           }else{
+             alert('Sorry no any matchings :(')
+             history.push('The-Barrel')
+           }
+        }else{
+            alert('Should not contain spaces in input value')
+            history.push('The-Barrel')
         }
     },[])
+    
     return (
         <div className="container-fluid">
             <br/>

@@ -13,7 +13,7 @@
 }
 @media only screen and (max-width: 600px) {
    #menu-outer{
-      height: 20vh;
+      height: 10vh;
    }
    #menu-input{
        width: 100%;

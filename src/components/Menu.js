@@ -25,6 +25,7 @@ export default function Menu() {
     const onKeyDown=(e)=>{
         if (e.key === 'Enter') {
             history.push(`${input}`)
+            setInput('')
         }
     }
 

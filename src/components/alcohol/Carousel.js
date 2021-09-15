@@ -10,7 +10,7 @@ export default function Carousel() {
     },[])
 
     return (
-        <div className="container-fluid" id="carousel-outer">
+        <div className="container-fluid" id="carousel-outer-al">
             <div className="row">
                 <div className="col-md-8" id="carousel-inner-1">
                     <h1>Alcohols</h1>
